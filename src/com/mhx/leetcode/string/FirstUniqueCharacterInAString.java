@@ -12,20 +12,20 @@ import java.util.Set;
 public class FirstUniqueCharacterInAString {
     /**
      * My Version
-     * @param s
-     * @return
+     * @param s the given string
+     * @return the index of the first non-repeating character
      */
     public int firstUniqChar(String s) {
         if ("".equals(s)) {
             return -1;
         }
-        LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+        LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
         String[] sList = s.split("");
         if (sList.length == 1) {
             return 0;
         }
         for (String str : sList) {
-            map.put(str, map.get(str) == null ? Integer.valueOf(1) : map.get(str) + 1);
+            map.put(str, map.get(str) == null ? 1 : map.get(str) + 1);
         }
         String uniqChar = null;
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
@@ -48,8 +48,8 @@ public class FirstUniqueCharacterInAString {
 
     /**
      * Simple Version
-     * @param s
-     * @return
+     * @param s the given string
+     * @return the index of the first non-repeating character
      */
     public int firstUniqCharSimple(String s) {
         Map<Character, Integer> map = new LinkedHashMap<>();
