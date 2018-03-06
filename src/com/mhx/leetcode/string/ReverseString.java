@@ -7,10 +7,11 @@ package com.mhx.leetcode.string;
 public class ReverseString {
     /**
      * My Version
+     *
      * @param s
      * @return
      */
-    public static String reverseString(String s) {
+    public String reverseString(String s) {
         StringBuilder reversedString = new StringBuilder();
         String[] sList = s.split("");
         if (sList.length == 1) {
@@ -24,17 +25,19 @@ public class ReverseString {
 
     /**
      * Simple Version
+     *
      * @param s
      * @return
      */
-    public static String reverseStringSimple(String s) {
+    public String reverseStringSimple(String s) {
         StringBuilder reversedString = new StringBuilder(s);
         return reversedString.reverse().toString();
     }
 
     public static void main(String[] args) {
-        System.out.println(reverseString("leetcode"));
-        System.out.println(reverseStringSimple("leetcode"));
+        ReverseString reverseString = new ReverseString();
+        System.out.println(reverseString.reverseString("leetcode"));
+        System.out.println(reverseString.reverseStringSimple("leetcode"));
     }
 
 }

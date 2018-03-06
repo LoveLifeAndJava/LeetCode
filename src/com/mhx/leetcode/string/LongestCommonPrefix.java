@@ -1,7 +1,7 @@
 package com.mhx.leetcode.string;
 
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * @author MHX
@@ -56,17 +56,17 @@ public class LongestCommonPrefix {
 
     public static void main(String[] args) {
         LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[] {"a", "ab", "abcd", "abdc", "abd"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[] {"abb","abc"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[] {"a","b"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[] {"a"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[] {"c","acc","ccc"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"a", "ab", "abcd", "abdc", "abd"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"abb", "abc"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"a", "b"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"a"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"c", "acc", "ccc"}));
         System.out.println("========================================");
-        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[] {"a", "ab", "abcd", "abdc", "abd"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[] {"abb","abc"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[] {"a","b"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[] {"a"}));
-        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[] {"c","acc","ccc"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[]{"a", "ab", "abcd", "abdc", "abd"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[]{"abb", "abc"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[]{"a", "b"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[]{"a"}));
+        System.out.println(longestCommonPrefix.longestCommonPrefixSimple(new String[]{"c", "acc", "ccc"}));
 
     }
 }

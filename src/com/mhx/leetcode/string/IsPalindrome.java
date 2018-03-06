@@ -9,8 +9,8 @@ public class IsPalindrome {
         s = s.toLowerCase();
         StringBuilder ascendingStr = new StringBuilder();
         for (Character e : s.toCharArray()) {
-            // replaceAll("[^A-Za-z0-9]", "").toLowerCase();
-            // Character.isLetterOrDigit(e)
+            // Method 1: replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+            // Method 2: Character.isLetterOrDigit(e)
             if ((e >= 'a' && e <= 'z') || (e >= '0' && e <= '9')) {
                 ascendingStr.append(e);
             }

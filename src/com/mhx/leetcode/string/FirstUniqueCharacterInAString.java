@@ -12,6 +12,7 @@ import java.util.Set;
 public class FirstUniqueCharacterInAString {
     /**
      * My Version
+     *
      * @param s the given string
      * @return the index of the first non-repeating character
      */
@@ -48,6 +49,7 @@ public class FirstUniqueCharacterInAString {
 
     /**
      * Simple Version
+     *
      * @param s the given string
      * @return the index of the first non-repeating character
      */

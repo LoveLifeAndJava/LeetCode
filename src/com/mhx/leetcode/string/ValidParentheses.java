@@ -11,7 +11,7 @@ public class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         char[] chars = s.toCharArray();
-        // 优化，如果是奇数个直接返回false
+        // Optimize: if the length of s is odd, then return false directly
         if (chars.length % 2 != 0) {
             return false;
         }
@@ -33,7 +33,7 @@ public class ValidParentheses {
                     break;
             }
         }
-        // 防止((这种情况
+        // in case of condition '(('
         return stack.isEmpty();
     }
 
