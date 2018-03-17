@@ -1,6 +1,7 @@
 package com.mhx.leetcode.linkedlist;
 
 /**
+ * 21
  * @author MHX
  * @date 2018/3/6
  */

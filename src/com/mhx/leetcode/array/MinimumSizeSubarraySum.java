@@ -1,11 +1,18 @@
 package com.mhx.leetcode.array;
 
 /**
+ * 209
  * @author MHX
  * @date 2018/3/14
  */
 public class MinimumSizeSubarraySum {
 
+    /**
+     * Use two pointers
+     * @param s
+     * @param nums
+     * @return
+     */
     public int minSubArrayLen(int s, int[] nums) {
         int low = 0;
         int high = -1;

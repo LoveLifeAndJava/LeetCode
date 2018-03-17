@@ -1,10 +1,11 @@
 package com.mhx.leetcode.string;
 
 /**
+ * 125
  * @author MHX
  * @date 2018/3/5
  */
-public class IsPalindrome {
+public class ValidPalindrome {
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();
         StringBuilder ascendingStr = new StringBuilder();
@@ -19,10 +20,10 @@ public class IsPalindrome {
     }
 
     public static void main(String[] args) {
-        IsPalindrome isPalindrome = new IsPalindrome();
-        System.out.println(isPalindrome.isPalindrome(""));
-        System.out.println(isPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(isPalindrome.isPalindrome("race a car"));
-        System.out.println(isPalindrome.isPalindrome("0P"));
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+        System.out.println(validPalindrome.isPalindrome(""));
+        System.out.println(validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+        System.out.println(validPalindrome.isPalindrome("race a car"));
+        System.out.println(validPalindrome.isPalindrome("0P"));
     }
 }
