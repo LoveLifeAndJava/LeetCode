@@ -38,6 +38,7 @@ public class TwoSumII {
     }
 
     /**
+     * only if the array is sorted
      * use two pointers: low and high to find target
      *
      * @param numbers
@@ -49,11 +50,13 @@ public class TwoSumII {
         int low = 0;
         int high = numbers.length - 1;
         while (low < high) {
-            if (numbers[low] + numbers[high] == target) {
+            // in case of integer overflow
+            long sum = numbers[low] + numbers[high];
+            if (sum == target) {
                 results[0] = low + 1;
                 results[1] = high + 1;
                 return results;
-            } else if (numbers[low] + numbers[high] > target) {
+            } else if (sum > target) {
                 --high;
             } else {
                 ++low;
