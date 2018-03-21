@@ -8,6 +8,23 @@ package com.mhx.leetcode.linkedlist;
 public class ReverseLinkedList {
 
     /**
+     * Use 3 pointers, easy to understand
+     * @param head
+     * @return
+     */
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode post = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = post;
+        }
+        return pre;
+    }
+
+    /**
      * Use 3 pointers: pre, p, post to reverse the LinkedList
      * @param head
      * @return
@@ -74,7 +91,7 @@ public class ReverseLinkedList {
         head.next.next.next.next = new ListNode(5);
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
         System.out.println(head.printList());
-        ListNode reversedListNode = reverseLinkedList.reverseList1(head);
+        ListNode reversedListNode = reverseLinkedList.reverseList(head);
         System.out.println(reversedListNode.printList());
         System.out.println(reverseLinkedList.reverseList2(reversedListNode).printList());
     }
