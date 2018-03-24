@@ -1,4 +1,4 @@
-package com.mhx.leetcode.string;
+package com.mhx.leetcode.stack;
 
 import java.util.Stack;
 
